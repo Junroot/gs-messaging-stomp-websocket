@@ -19,7 +19,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: 13.125.32.177
-        username: ubuntu
+        username: KEY-babble
         key: ${{ secrets.AWS }}
         port: 22
         timeout: 5m
