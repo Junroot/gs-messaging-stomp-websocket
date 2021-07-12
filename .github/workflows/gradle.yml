@@ -21,6 +21,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+    - name: move to completed code
+      run: cd complete
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
