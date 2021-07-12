@@ -18,8 +18,8 @@ jobs:
     - name: Connect to SSH
       uses: appleboy/ssh-action@master
       with:
-        host: 13.125.32.177
-        username: junroot0909@gmail.com
+        host: "13.125.32.177"
+        username: "junroot0909@gmail.com"
         key: ${{ secrets.AWS }}
         port: 22
         command_timeout: 200m
