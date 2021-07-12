@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: executing remote ssh commands
       run: |
-        echo ${{ secrets.AWS }} > KEY-babble.cer
+        echo "${{ secrets.AWS }}" > KEY-babble.cer
         ssh -i KEY-babble.cer ubuntu@13.125.32.177
         ls
         
