@@ -22,7 +22,6 @@ jobs:
         username: junroot0909@gmail.com
         key: ${{ secrets.AWS }}
         port: 22
-        timeout: 5m
         command_timeout: 200m
         script: |
           ls
