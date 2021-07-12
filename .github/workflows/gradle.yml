@@ -11,14 +11,16 @@ on:
 
 jobs:
   build:
-
+    name: Build
     runs-on: ubuntu-latest
-    
     steps:
-    - name: ls -a via ssh
-      uses: garygrossgarten/github-action-ssh@release
+    - uses: actions/checkout@master
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
       with:
-        command: ls -a
-        host: 13.125.32.177
-        username: ubuntu
-        privateKey: ${{ secrets.AWS }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.KEY }}
+        source: "LICENSE.txt"
+        target: "/"
