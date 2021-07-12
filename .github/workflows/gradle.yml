@@ -15,11 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
-    - name: executing remote ssh commands
-      run: |
-        echo "${{ secrets.AWS }}" > KEY-babble.cer
-        chmod 400 KEY-babble.cer
-        ssh -i KEY-babble.cer ubuntu@13.125.32.177
-        ls
-        
+    - name: Connect to SSH
+      uses: appleboy/ssh-action@master
+      with:
+        host: 13.125.32.177
+        username: ubuntu
+        key: ${{ secrets.AWS }}
+        port: 22
+        script: |
+          ls
+          whoami
