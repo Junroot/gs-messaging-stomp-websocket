@@ -1,3 +1,5 @@
+[![Java CI with Gradle](https://github.com/Junroot/gs-messaging-stomp-websocket/actions/workflows/gradle.yml/badge.svg)](https://github.com/Junroot/gs-messaging-stomp-websocket/actions/workflows/gradle.yml)
+
 :spring_version: current
 :jackson: https://wiki.fasterxml.com/JacksonHome
 :AtMessageMapping: https://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/messaging/handler/annotation/MessageMapping.html
