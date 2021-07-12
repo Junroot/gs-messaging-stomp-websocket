@@ -20,5 +20,5 @@ jobs:
       with:
         command: ls -a
         host: 13.125.32.177
-        username: garygrossgarten
+        username: ubuntu
         privateKey: ${{ secrets.AWS }}
