@@ -23,6 +23,6 @@ jobs:
         distribution: 'adopt'
     - name: run gradle
       run: |
-        cd complete,
-        chmod +x gradlew,
+        cd complete
+        chmod +x gradlew
         ./gradlew build
