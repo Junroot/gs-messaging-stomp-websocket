@@ -29,7 +29,7 @@ function disconnect() {
         stompClient.disconnect();
     }
     setConnected(false);
-    console.log("Disconnected");
+    console.log("Disconnectedd");
 }
 
 function sendName() {
